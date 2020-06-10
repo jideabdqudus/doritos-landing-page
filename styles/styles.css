@@ -1,13 +1,11 @@
 body {
-  font-family: "Tenali Ramakrishna", sans-serif;
+  font-family: "Londrina solid", "cursive";
   margin: 0;
-}
-
-.container {
   background: linear-gradient(#d00000, #6a040f);
   background-color: #d00000;
-  height: 100vh;
-  overflow: hidden;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   position: relative;
 }
 
@@ -15,6 +13,8 @@ body {
   position: absolute;
   opacity: 0.5;
   top: 50%;
+  max-width: 100%;
+  max-height: 300vh;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -26,7 +26,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0px;
 }
 
 .container header .logo {
@@ -44,7 +43,7 @@ body {
 }
 
 .container header nav ul li a {
-  font-size: 1em "Tenali Ramakrishna", cursive;
+  font-size: 1em "Londrina solid", "cursive";
   font-weight: 900;
   color: aliceblue;
   letter-spacing: 1px;
@@ -100,11 +99,120 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Londrina solid", "cursive";
   font-size: 0.7em;
   font-weight: 500;
   box-shadow: 0 0 6px 0 rgba (0, 0, 0, 0.3);
   width: 20px;
   background-color: #333333;
   border-radius: 50px;
+}
+
+.container section {
+  max-width: 1400px;
+  margin: auto;
+  height: inherit;
+  margin-top: -40px;
+  display: flex;
+}
+
+.container section .product {
+  position: relative;
+  color: #ffc107;
+  width: 50%;
+}
+
+.container section .product h1 {
+  font: 5em "Londrina Solid", cursive;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-shadow: 3px 3px 0 #000;
+  position: relative;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.container section .product h3 {
+  font: 2em "Londrina Solid", cursive;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-bottom: 7px;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 #000;
+  -webkit-text-stroke: 2px #000;
+  position: relative;
+  overflow: hidden;
+}
+
+.container section .product p {
+  width: 80%;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.container section .product p strong {
+  display: block;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  padding-top: 10px;
+  margin-bottom: 0px;
+}
+
+.container section .product h2 {
+  font: 3em "Londrina Solid", cursive;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 #000;
+  -webkit-text-stroke: 2px #000;
+  position: relative;
+  overflow: hidden;
+  height: 60px;
+}
+
+.container section .product .btn {
+  height: 60px;
+  overflow: hidden;
+}
+
+.container section .product a {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    border: 2px solid #ffc107;
+    padding: 10px 40px;
+    box-sizing: border-box;
+    font: 1em 'Londrina Solid', cursive;
+    font-weight: 900;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: all 250ms ease-in-out;
+}
+
+.container section .product a:hover {
+    background-color: #ffc107;
+    color: #370617;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container section .product a:after {
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background-color: #ffc107;
+    transition: 500ms cubic-bezier(0.17, 0.67, 0, 1.01);
 }

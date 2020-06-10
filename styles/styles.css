@@ -281,3 +281,26 @@ body {
     position: relative;
     z-index: 0;
 }
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    z-index: 99;
+}
+
+.first {
+    background-color: #d00000;
+}
+
+.second {
+    background-color: #d00000;
+    left: 33.3%;
+}
+
+.third {
+    background-color: #d00000;
+    left: 66.6%;
+}
+

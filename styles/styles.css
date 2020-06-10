@@ -112,7 +112,7 @@ body {
   max-width: 1400px;
   margin: auto;
   height: inherit;
-  margin-top: -40px;
+  margin-top: 40px;
   display: flex;
 }
 
@@ -263,14 +263,14 @@ body {
 .container section .product-display figure span .chips {
     height: 22em;
     top: -25em;
-    left: 55em;
+    left: 60em;
     transform: rotate(10deg);
 }
 
 .container section .product-display figure span .ketchup {
     height: 8em;
     top: 15em;
-    left: 35em;
+    left: 40em;
     position: relative;
 }
 
